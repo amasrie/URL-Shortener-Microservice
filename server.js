@@ -1,7 +1,6 @@
 require('dotenv').load();
 var express = require('express');
 var app = express();
-var moment = require('moment');
 var mongo = require('mongodb').MongoClient;
 var validUrl = require('valid-url');
 var counter;
