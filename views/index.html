@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <meta name="description" content="An app that shortens URLs">
+    <link id="favicon" rel="icon" href="https://camo.githubusercontent.com/5d84e763fd06a8ee7ccc638fbbbb2bd61f311f22/68747470733a2f2f70696c6f746d6f6f6e2e636f6d2f706f70636c69702f657874656e73696f6e732f69636f6e2f73686f72746c696e6b2e706e67" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        URL Shortener Microservice
+      </h1>
+    </header>
+
+    <main>
+      <h2>User stories:</h2>
+      <ul>
+        <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+        <li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+        <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+      </ul>
+      
+      <h2>Examples</h2>
+      <h3>This input</h3>
+      <p>https://marble-cauliflower.glitch.me/url/https://www.google.com</p>
+      <h3>Will return an output similar to this</h3>
+      <p>{ "original_url":"http://foo.com:80", "short_url":"https://marble-cauliflower.glitch.me/8170" }</p>
+      <h3>And using the short_url property will redirect to the original site</h3>
+    </main>
+
+  </body>
+</html>
